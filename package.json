@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "prettier": "^2.5.0"
+  },
+  "scripts": {
+    "setup": "npm i && cd client && npm i",
+    "build": "cd client && npm run build"
+  }
+}
