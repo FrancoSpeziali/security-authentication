@@ -47,13 +47,11 @@ Inside `server.js`, use the `mongoose.connect()` method to create the connection
 
 In the next tasks, we will create a REST API so that clients can register and login on our server. To do this, we must first begin with a few steps:
 
-1. Install the [cors](https://www.npmjs.com/package/cors) npm package
+1. Add [cors](https://www.npmjs.com/package/cors) npm package to your middleware stack. This will prevent the dreaded same origin policy error in your browser.
 
-2. Import and add `cors` to your middleware stack. This will prevent the dreaded same origin policy error in your browser.
+2. Add the `express.json()` middleware to your middleware stack. This will properly parse any JSON sent with the client body.
 
-   > Remember to run your middleware before any of your routes!
-
-3. Add the `express.json()` middleware to your middleware stack. This will allow any JSON sent for example, with a POST request, to be correctly read by the server.
+> Remember to run your middleware before any of your routes!
 
 ### Task 4 - Creating a schema & model for the user
 
